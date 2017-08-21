@@ -8,6 +8,9 @@ var app = new Vue({
     methods: {
         addition: function (){
             this.result = parseInt(this.opA) + parseInt(this.opB)
+        },
+        soustracfion: function(){
+            this.result= parseInt(this.opA) - parseInt(this.opB);
         }
     }
 })
