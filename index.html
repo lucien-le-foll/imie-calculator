@@ -13,7 +13,11 @@
 
     <!-- l'élément DOM contenant l'application -->
     <div id="app">
-        <h3>{{ message }}</h3>
+        <h1>La calculatrice collaborative</h1>
+        <input type="number" v-model="opA">
+        <input type="number" v-model="opB">
+        <button v-on:click="addition()">Additionner</button>
+        <h2>{{ result }}</h2>
     </div>
 
     <!-- import de Vue JS et de notre script -->
