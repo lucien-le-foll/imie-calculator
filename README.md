@@ -40,6 +40,3 @@ Et JIRA dans notre gestion de projet.
 * **Lucien Le Foll** 
 * **Nicolas Lacroix** 
 * **Corentin Chateau** 
-
-
-
