@@ -20,7 +20,7 @@ Calculatrice scientifique sur interface web
 
 ## Déploiement
 
-Cette application peut être installée sur tout serveur web tels que Apache ou Nginx.
+Cette application peut être installée sur tout serveur web tel que Apache ou Nginx.
 
 ## Construit avec
 
