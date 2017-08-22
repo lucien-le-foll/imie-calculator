@@ -52,6 +52,15 @@
             </div>
             <div class="columns">
                 <div class="column is-one-quarter">
+                    <h3>Ici les mémoires</h3>
+                    <h3>Historique des calculs</h3>
+                    <ul>
+                        <li v-for="item in historic">{{item.calcul}} = {{item.result}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
                     <h3 class="title">Résultat : {{ result }}</h3>
                 </div>
             </div>
