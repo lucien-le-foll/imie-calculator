@@ -1,16 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
-        opA: 0,
-        opB: 0,
+        expr: '',
         result: 0
     },
     methods: {
-        addition: function (){
-            this.result = parseInt(this.opA) + parseInt(this.opB)
-        },
-        soustracfion: function(){
-            this.result= parseInt(this.opA) - parseInt(this.opB);
+        calculate: function (){
+            this.result = eval(this.expr)
         }
     }
 })
