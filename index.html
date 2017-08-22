@@ -4,32 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- import de Bootstrap 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- import de Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" crossorigin="anonymous">
 
     <title>Calculatrice IMIE</title>
 </head>
 <body>
 
     <!-- l'élément DOM contenant l'application -->
-    <div id="app">
-        <h1 class="text-center">La calculatrice collaborative</h1>
+    <section class="section" id="app">
         <div class="container">
-          <form>
-            <div class="row">
-              <div class="input-group">
-                <input type="text" class="form-control" v-model="expr">
-                <span class="input-group-btn">
-                  <button id="plus" type="button" v-on:click="calculate()" class="btn btn-info btn-block">Calculer</button>
-                </span>
-              </div>
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title">Calculatrice collaborative IMIE</h1>
+                </div>
             </div>
-          </form>
-          <div id="resultat" class="text-right">
-            <h2>{{ result }}</h2>
-          </div>
+            <div class="columns">
+                <div class="column is-three-quarters">
+                    <div class="field">
+                        <div class="control">
+                            <input type="text" class="input is-large" v-model="expr">
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <a class="button is-primary is-large" @click="calculate()">Calculez</a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <h3 class="title">Résultat : {{ result }}</h3>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- import de Vue JS et de notre script -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.2/math.min.js"></script>
