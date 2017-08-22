@@ -15,7 +15,7 @@ var app = new Vue({
     methods: {
         calculate: function (){
             this.result = math.eval(this.expr)
-            this.historic.push({calcul:this.expr, result:this.result})
+            this.historic.unshift({calcul:this.expr, result:this.result})
         },
         append: function(input){
             this.expr += input
