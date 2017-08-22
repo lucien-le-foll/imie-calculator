@@ -3,12 +3,12 @@ var app = new Vue({
     data: {
         expr: '',
         result: 0,
-        historic: [],
+        historic: []
     },
     methods: {
         calculate: function (){
-            this.result = math.eval(this.expr);
-            this.historic.push({calcul:this.expr, result:this.result});
+            this.result = math.eval(this.expr)
+            this.historic.push({calcul:this.expr, result:this.result})
         }
     }
 })
