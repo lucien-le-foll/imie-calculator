@@ -28,11 +28,24 @@
                     </div>
                 </div>
                 <div class="column is-one-quarter">
-                    <a class="button is-primary is-large" @click="calculate()">Calculez</a>
+                    <a class="button is-primary is-large is-fullwidth" @click="calculate()">Calculez</a>
                 </div>
             </div>
             <div class="columns">
+                <div class="column is-half">
+                    <div class="columns is-gapless" v-for="(inputList, index) in inputs">
+                        <div class="column" v-for="input in inputs[index]">
+                            <a class="button is-fullwidth" @click="append(input)">{{ input }}</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="column">
+                    <h3>Ici les mémoires</h3>
+                    <h3>Ici l'historique</h3>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-quarter">
                     <h3 class="title">Résultat : {{ result }}</h3>
                 </div>
             </div>
