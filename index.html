@@ -13,6 +13,7 @@
 
     <!-- l'élément DOM contenant l'application -->
     <div id="app">
+<<<<<<< HEAD
         <h1 class="text-center">La calculatrice collaborative</h1>
         <div class="container">
           <form class="form-inline">
@@ -28,10 +29,26 @@
           <div id="resultat" class="text-right">
             <h2>{{ result }}</h2>
           </div>
+=======
+        <h1>La calculatrice collaborative</h1>
+        <div class="form-container">
+            <form>
+                <div class="form-group col-xs-6">
+                    <input class="form-control" type="text" v-model="expr">
+                </div>
+                <div class="row">
+                    <button id="plus" v-on:click="calculate()" class="btn btn-primary col-xs-6" type="button">Calculer</button>
+                </div>
+            </form>
+            <div id="resultat">
+                <h2>{{ result }}</h2>
+            </div>
+>>>>>>> master
         </div>
     </div>
 
     <!-- import de Vue JS et de notre script -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.2/math.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/vue@2.4.2/dist/vue.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </body>
