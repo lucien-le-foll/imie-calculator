@@ -35,8 +35,8 @@ Nous utilisons GitHub (https://github.com/lucien-le-foll/imie-calculator)
 
 ## Auteurs
 
-* **François Mourrier** 
-* **Lucien Lefoll** 
+* **François Mourier** 
+* **Lucien Le Foll** 
 * **Nicolas Lacroix** 
 * **Corentin Chateau** 
 
