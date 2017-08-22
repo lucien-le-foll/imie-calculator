@@ -6,7 +6,7 @@ var app = new Vue({
     },
     methods: {
         calculate: function (){
-            this.result = eval(this.expr)
+            this.result = math.eval(this.expr)
         }
     }
 })
